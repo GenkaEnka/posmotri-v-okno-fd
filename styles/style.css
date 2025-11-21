@@ -4,15 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
 .page {
   display: flex;
   inline-size: 1200px;
-  margin: 135px auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  align-items: center;
+  height: 100%;
 }
 
 h1,
@@ -51,13 +58,15 @@ video {
 
 .content {
   display: flex;
+  min-height: 534px;
   gap: 30px;
   margin: 0 30px;
   inline-size: 100%;
+  flex: 1;
 }
 
 .result {
-  align-self: flex-end;
+  margin-top: auto;
 }
 
 .result__video-container {
@@ -77,6 +86,11 @@ video {
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.error__title {
+  letter-spacing: -0.3px;
+  padding-bottom: 2px;
 }
 
 .search-form__fieldset {
@@ -199,15 +213,16 @@ video {
 
 .content__details {
   inline-size: 100%;
+  margin-top: 4px;
 }
 
 .title {
-  padding: 0 0 22.5px;
+  padding: 0 0 23.6px;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 70.5px;
+  line-height: 70px;
   text-transform: uppercase;
 }
 
